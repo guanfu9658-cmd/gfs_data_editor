@@ -1,0 +1,30 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot editor/import caches
+.import/
+*.import
+
+# Script/resource generated UIDs (can be regenerated)
+*.uid
+
+# Godot export/build artifacts
+*.apk
+*.aab
+*.ipa
+*.pck
+*.exe
+*.x86_64
+*.zip
+export_presets.cfg
+
+# .NET / C# build outputs (if enabled)
+.mono/
+.vs/
+bin/
+obj/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

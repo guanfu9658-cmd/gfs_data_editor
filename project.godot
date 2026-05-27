@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="DataEditor"
+run/main_scene="res://test.tscn"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameData="*res://addons/gf_data_editor/runtime/game_data.gd"
+GFDataEditorLoader="*res://scr/gf_dataeditor/gf_data_loader.gd"
+
+[dotnet]
+
+project/assembly_name="DataEditor"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gf_data_editor/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
